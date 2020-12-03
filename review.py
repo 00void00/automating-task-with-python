@@ -3,8 +3,7 @@ import os
 import requests
 
 dir="/data/feedback/"
-url= "http://1.1.1.1/feedback/"
-#Replace with corpweb" IP Address
+url= "http://[corpweb" IP Address]/feedback/"
 
 for file in os.listdir(dir):
     head = ["title","name","date","feedback"]
