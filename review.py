@@ -10,10 +10,11 @@ for file in os.listdir(dir):
     d = {}
     lineas = []
     print(file)
-    with open(dir+"/"+file,"r") as f
+    with open(dir+"/"+file,"r") as f:
         x = 0
         for line in f:
-            d[head[x]] = line.rsplit('\n')
+            d[head[x]] = line.rstrip('\n')
             x += 1
     print(d)
     response = requests.post(url,json=d)
+print(response.status_code)
